@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale">
+        <title>Document</title>
+        <link rel="stylesheet"
+		  type="text/css"
+		  href="bootstrap.css"
+	      />
+
+          <link rel="stylesheet"
+          type="text/css"
+          href="styles.css"
+          />	
+          <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	</head>
+	<body>
+		<a 
+		href="index.html">
+			My Project Work
+		</a>
+		 &nbsp;
+		<a 
+		href="introduction.html">
+		  Introduction 
+		</a>
+		&nbsp;
+		<a 
+		href="contact.html">
+			Contact me 
+		</a>
+
+		<hr>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img class="crop-img" 
+                      src="img_1.jpg" 
+                      alt="AB Testing One"/> 
+                </div>
+                <div class="col-md-3">
+                    <img class="crop-img" 
+                      src="img_2.jpg" 
+                      alt="AB Testing Two"/> 
+                </div>
+                <div class="col-md-3">
+                    <img class="crop-img" 
+                      src="img_3.jpg" 
+                      alt="Login"/> 
+                </div>
+                <div class="col-md-3">
+                    <img class="crop-img" 
+                      src="img_4.jpg" 
+                      alt="Home Screen"/> 
+                </div>
+                <div class="col-md-3">
+                    <img class="crop-img" 
+                       src="img_5.jpg" 
+                       alt="Rewards Redeem"/> 
+        </div>
+        <div class="row">
+			<div class="col-md-12">
+				<img id="bigImage" 
+				  class="large-img" 
+				  src="img_1.jpg" 
+				  alt="AB Testing One"/> 
+                </div>
+            </div>
+        </div>
+        <script>
+            	$(".crop-img").click(function(){
+			$("#bigImage").attr('src', 
+				$(this).attr('src'));
+		});
+	</script>
+    </hr>
+        <style>
+            body { 
+            color:darkblue;
+            }
+            h1 {
+            font-family: Arial,sans-serif; 
+            font-size: 150px;
+            color: salmon;
+            }
+            </style>
+    </head>
+    <body>
+        <h1>Hello, I am Joey</h1>
+        <a href="MyPhoto.png"> 
+            <img 
+               src="MyPhoto.png" 
+               width="50%"
+            />
+           </a>
+        <p>This is my first web page and it shows how I start to learn coding.</p>
+        <button id="color">Change color</button> 
+        <script>
+          document.getElementById('color').onclick = changeColor;
+var currentColor = "darkblue";
+
+function changeColor() { 
+                if(currentColor == "darkblue"){
+           document.body.style.color = "green";
+           currentColor = "green";
+                  } else {
+           document.body.style.color = "darkblue";
+           currentColor = "darkblue";
+                  } 
+           return currentColor;
+       }  
+        </script>
+    </body>
+</html>
+
